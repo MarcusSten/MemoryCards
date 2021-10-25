@@ -250,3 +250,45 @@ footer {
       font-family: $font;
     }
 }
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .middle {
+    margin: 0 auto;
+    width: 90%;
+    flex-wrap: wrap;
+      .box {
+        margin-bottom: 50px;
+      }
+  }
+  .modal,
+  .modal_err {
+    width: 250px;
+    left: 50%;
+    margin-left: -100px;
+    top: 100px;
+  }
+  .modal_txt {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .middle {
+    margin: 0 auto;
+    width: 90%;
+    flex-wrap: wrap;
+      .box {
+        margin-bottom: 30px;
+      }
+  }
+  .modal,
+  .modal_err {
+    width: 250px;
+    left: 50%;
+    margin-left: -125px;
+    top: 100px;
+  }
+  .modal_txt {
+    padding: 10px;
+  }
+}
