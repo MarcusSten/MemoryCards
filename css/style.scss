@@ -8,6 +8,12 @@ $font: "Inter", sans-serif;
 html, body {
   height: 100%;
 }
+
+a {
+  color: rgb(255, 255, 255) !important;
+  text-decoration: none
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -20,6 +26,37 @@ header {
   justify-content: space-around;
   align-items: center;
   height: 149px;
+}
+
+.content-social {
+  font-size: 2rem;
+  margin: auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-social a {
+  color: #e3e3e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-social a:hover, 
+.content-social a:focus {
+  color: gray;
+}
+
+.content-social a:last-child {
+  margin-right: 0;
+}
+
+.content-social__text {
+  font-size: 12px;
+  font-family: $font;
+  color: #fff;
 }
 
 .middle {
