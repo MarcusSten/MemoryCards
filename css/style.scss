@@ -136,6 +136,9 @@ header {
     }
   }
 }
+.box:hover {
+  filter: grayscale(0);
+}
 h1 {
   font-family: $font;
   color: white;
@@ -289,13 +292,12 @@ main {
 }
 footer {
   flex: 0 0 auto;
-    p {
-      text-align: center;
-      font-family: $font;
-    }
+  text-align: center;
+  font-family: $font;
+
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 920px) {
   .middle {
     margin: 0 auto;
     width: 90%;
@@ -335,8 +337,22 @@ footer {
   .modal_txt {
     padding: 10px;
   }
+  .content-social__text {
+    text-align: center;
+  }
 }
 @media (max-width: 320px) {
+  header {
+    flex-direction: column;
+    a {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .logo {
+    width: 90%;
+  }
   .middle {
     margin: 0 auto;
     width: 85%;
